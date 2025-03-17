@@ -37,11 +37,86 @@ STEP 5:Normalizing the data<BR>
 STEP 6:Splitting the data into test and train<BR>
 
 ##  PROGRAM:
-TYPE YOUR CODE HERE
+# IMPORT LIBRARIES
+```
+
+from google.colab import files
+import pandas as pd
+import seaborn as sns
+import io
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.model_selection import train_test_split
+from scipy import stats
+import numpy as np
+```
+# READ THE DATASET
+```
+df=pd.read_csv("Churn_Modelling.csv")
+
+### Checking Data
+py
+df.head()
+df.tail()
+df.columns
+```
+# CHECK THE MSSING DATA
+```
+df.isnull().sum()
 
 
+### Check for Duplicates
+py
+df.duplicated()
+```
+# ASSIGNING Y
+```
+y = df.iloc[:, -1].values
+print(y)
+```
+# CHECK FOR DUPLICATES
+```
+py df.duplicated()
+```
+# CHECK FOR OUTLIERS
+```
+df.describe()
+```
+
+# Dropping string values data from dataset
+```
+data = df.drop(['Surname', 'Geography','Gender'], axis=1)
+```
+# Checking datasets after dropping string values data from dataset
+```
+data.head()
+```
+# Normalize the dataset
+```
+scaler=MinMaxScaler()
+df1=pd.DataFrame(scaler.fit_transform(data))
+print(df1)
+```
+# SPLIT THE DATASET
+```
+X=df.iloc[:,:-1].values
+y=df.iloc[:,-1].values
+print(X)
+print(y)
+```
+# TRAINING AND TESTING MODEL
+```
+X_train ,X_test ,y_train,y_test=train_test_split(X,y,test_size=0.2)
+print("X_train\n")
+print(X_train)
+print("\nLenght of X_train ",len(X_train))
+print("\nX_test\n")
+print(X_test)
+print("\nLenght of X_test ",len(X_test))
+```
 ## OUTPUT:
-SHOW YOUR OUTPUT HERE
+# Data checking
+
 
 
 ## RESULT:
