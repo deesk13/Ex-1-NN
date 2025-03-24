@@ -1,7 +1,7 @@
-<H3>ENTER YOUR NAME</H3>
-<H3>ENTER YOUR REGISTER NO.</H3>
+<H3>ENTER YOUR NAME</H3>: DEVA DHARSHINI
+<H3>ENTER YOUR REGISTER NO.</H3>: 212223240026
 <H3>EX. NO.1</H3>
-<H3>DATE</H3>
+<H3>DATE</H3>: 22.03.25
 <H1 ALIGN =CENTER> Introduction to Kaggle and Data preprocessing</H1>
 
 ## AIM:
@@ -116,8 +116,31 @@ print("\nLenght of X_test ",len(X_test))
 ```
 ## OUTPUT:
 # Data checking
+![Screenshot 2025-03-24 101631](https://github.com/user-attachments/assets/aff38a50-7f6b-41dc-bd6c-6ca887ff1059)
 
+# Missing Data
+![Screenshot 2025-03-24 101720](https://github.com/user-attachments/assets/8418eb8c-a6cc-4833-9e54-0271604bcdcb)
 
+# Duplicates identification
+![Screenshot 2025-03-24 101739](https://github.com/user-attachments/assets/acb8d4cf-0008-4080-8f3c-fe28bdbff8d0)
+
+# Vakues of 'Y'
+![Screenshot 2025-03-24 101749](https://github.com/user-attachments/assets/293cc258-a007-434e-b53f-bd1f9713dfa7)
+
+# Outliers
+![Screenshot 2025-03-24 101808](https://github.com/user-attachments/assets/eb7f030e-f4a5-43eb-b34b-a73a5349d55c)
+
+# Checking datasets after dropping string values data from dataset
+![Screenshot 2025-03-24 101831](https://github.com/user-attachments/assets/c99a3309-7f66-4e97-85ee-33b91853c323)
+
+# Normalize the dataset
+![Screenshot 2025-03-24 101847](https://github.com/user-attachments/assets/c39bc4d4-f4c1-459d-a562-cc41d0c1ec94)
+
+# Split the dataset
+![Screenshot 2025-03-24 101858](https://github.com/user-attachments/assets/d597452f-dfdb-4bd6-afdd-893d317ae04c)
+
+# Training and testing model
+![Screenshot 2025-03-24 101910](https://github.com/user-attachments/assets/515ef9b7-8d9f-4dbc-bd21-d7c834e74bc6)
 
 ## RESULT:
 Thus, Implementation of Data Preprocessing is done in python  using a data set downloaded from Kaggle.
